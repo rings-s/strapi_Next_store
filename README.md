@@ -1,0 +1,1 @@
+# strapi_Next_store
