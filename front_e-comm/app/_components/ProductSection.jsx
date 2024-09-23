@@ -16,13 +16,13 @@ function ProductSection() {
 
   const getLatestProducts_ = ()=>{
     ProductApis.getLatestProducts().then(res=>{
-      console.log(res.data.data)
+      // console.log(res.data.data)
       setProductList(res.data.data)
     })
   }
   return (
     <div>
-        <ProductList productList/>
+        <ProductList productList={productList}/>
     </div>
   )
 }

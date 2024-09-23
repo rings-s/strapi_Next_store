@@ -1,8 +1,19 @@
 import React from 'react'
 
-function ProductList() {
+// recieve product list as a props
+function ProductList({productList}) {
   return (
-    <div>ProductList</div>
+    <div>
+
+      {productList.map(item=>(
+
+      <div>
+        {item?.attributes?.title}
+
+      </div>
+    ))}
+
+    </div>
   )
 }
 
